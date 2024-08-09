@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="148.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller_for_input">
+   <children>
+      <VBox prefHeight="130.0" prefWidth="400.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="207.0" text="Должен быть введен полный путь до файла с изображением " textAlignment="CENTER" wrapText="true" />
+            <TextField fx:id="enter_text" prefHeight="25.0" prefWidth="277.0" promptText="Введите сюда путь" />
+            <Label text="После ввода нажмите ENTER" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

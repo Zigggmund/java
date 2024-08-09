@@ -1,0 +1,21 @@
+.root{
+    -fx-background-color: #808080;
+}
+
+.label{
+    -fx-font-size: 13;
+    -fx-text-fill: #FFD700;
+    -fx-wrap-text: true;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+HBox, VBox{
+    -fx-alignment: center;
+    -fx-spacing: 10;
+}
+
+#time_sample{
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+}

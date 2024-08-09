@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller_for_images">
+    <children>
+        <Button fx:id="btn_image" layoutX="221.0" layoutY="34.0" mnemonicParsing="false" onAction="#add_image"
+                prefHeight="33.0" prefWidth="163.0" text="Загрузить изображение"/>
+        <ImageView fx:id="frame_image" fitHeight="601.0" fitWidth="601.0" layoutY="99.0" pickOnBounds="true"
+                   preserveRatio="true"/>
+    </children>
+</AnchorPane>

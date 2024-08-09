@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller_for_main">
+   <children>
+      <MenuBar prefHeight="34.0" prefWidth="700.0">
+        <menus>
+          <Menu mnemonicParsing="false" onAction="#new_window" text="Правильная осанка">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Открыть" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" onAction="#new_window" text="Упражнения для глаз">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Открыть" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" onAction="#new_window" text="Зарядка">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Открыть" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="21.0" layoutY="116.0" prefHeight="185.0" prefWidth="198.0" text="Уведомления о выпрямлении спины. Нажмите на кнопку &quot;спина&quot;, чтобы выключить/включить счетчик.  Нажмите на левую часть таймера, чтобы изменить время работы, на левую - время на поправление осанки" />
+      <Button fx:id="timer1_work" layoutX="60.0" layoutY="344.0" mnemonicParsing="false" onAction="#change_timer" prefHeight="25.0" prefWidth="60.0" text="00:00" />
+      <Button fx:id="timer1_rest" layoutX="120.0" layoutY="344.0" mnemonicParsing="false" onAction="#change_timer" prefHeight="25.0" prefWidth="60.0" text="00:00" />
+      <Button fx:id="btn_timer1" layoutX="75.0" layoutY="301.0" mnemonicParsing="false" onAction="#turn_timer" prefHeight="34.0" prefWidth="90.0" text="Включить" />
+      <Label layoutX="244.0" layoutY="116.0" prefHeight="185.0" prefWidth="198.0" text="Уведомления о необходимости сделать комплекс упражнений для снятия усталости глаз. Нажмите на кнопку &quot;зрение&quot;, чтобы выключить/включить счетчик.  Нажмите на левую часть таймера, чтобы изменить время работы, на левую - время на упражнения для глаз" />
+      <Button fx:id="timer2_work" layoutX="283.0" layoutY="344.0" mnemonicParsing="false" onAction="#change_timer" prefHeight="25.0" prefWidth="60.0" text="00:00" />
+      <Button fx:id="timer2_rest" layoutX="343.0" layoutY="344.0" mnemonicParsing="false" onAction="#change_timer" prefHeight="25.0" prefWidth="60.0" text="00:00" />
+      <Button fx:id="btn_timer2" layoutX="298.0" layoutY="301.0" mnemonicParsing="false" onAction="#turn_timer" prefHeight="34.0" prefWidth="90.0" text="Включить" />
+      <Label layoutX="472.0" layoutY="116.0" prefHeight="185.0" prefWidth="198.0" text="Уведомления о необходимости сделать зарядку. . Нажмите на кнопку &quot;Зарядка&quot;, чтобы выключить/включить счетчик.  Нажмите на левую часть таймера, чтобы изменить время работы, на левую - время на зарядку." />
+      <Button fx:id="timer3_work" layoutX="511.0" layoutY="344.0" mnemonicParsing="false" onAction="#change_timer" prefHeight="25.0" prefWidth="60.0" text="00:00" />
+      <Button fx:id="timer3_rest" layoutX="571.0" layoutY="344.0" mnemonicParsing="false" onAction="#change_timer" prefHeight="25.0" prefWidth="60.0" text="00:00" />
+      <Button fx:id="btn_timer3" layoutX="526.0" layoutY="301.0" mnemonicParsing="false" onAction="#turn_timer" prefHeight="34.0" prefWidth="90.0" text="Включить" />
+      <Button fx:id="btn_stop" layoutX="290.0" layoutY="68.0" mnemonicParsing="false" onAction="#stop" prefHeight="48.0" prefWidth="105.0" text="Включить все" />
+      <Button fx:id="btn_pause" layoutX="68.0" layoutY="68.0" mnemonicParsing="false" onAction="#pause" prefHeight="48.0" prefWidth="105.0" text="Пауза" />
+      <Button fx:id="btn_reset" layoutX="519.0" layoutY="68.0" mnemonicParsing="false" onAction="#reset" prefHeight="48.0" prefWidth="105.0" text="Сбросить настройки" />
+      <Label fx:id="lbl_timer1_work" layoutX="77.0" layoutY="378.0" text="Time" />
+      <Label fx:id="lbl_timer1_rest" layoutX="136.0" layoutY="378.0" text="Time" />
+      <Label fx:id="lbl_timer2_work" layoutX="300.0" layoutY="378.0" text="Time" />
+      <Label fx:id="lbl_timer2_rest" layoutX="359.0" layoutY="378.0" text="Time" />
+      <Label fx:id="lbl_timer3_work" layoutX="529.0" layoutY="378.0" text="Time" />
+      <Label fx:id="lbl_timer3_rest" layoutX="588.0" layoutY="378.0" text="Time" />
+   </children>
+</AnchorPane>

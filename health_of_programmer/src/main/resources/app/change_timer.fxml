@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="148.0" prefWidth="242.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller_for_input">
+   <children>
+      <VBox prefHeight="150.0" prefWidth="253.0">
+         <children>
+            <Label prefHeight="41.0" prefWidth="207.0" text="Должно быть введено число минут, либо строка вида:" textAlignment="CENTER" wrapText="true" />
+            <Label fx:id="time_sample" text="ЧАСЫ:МИНУТЫ:СЕКУНДЫ" />
+            <TextField fx:id="enter_text" prefHeight="25.0" prefWidth="222.0" promptText="Введите сюда время" />
+            <Label text="После ввода нажмите ENTER" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
